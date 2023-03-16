@@ -5,12 +5,9 @@ import java.nio.file.Paths;
 
 public class Clase4Ejercicio2 {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String ruta = "C:\\Users\\Fabricio\\miprimerarchivonum.txt";
-		for (String linea : Files.readAllLines(Paths.get(ruta))){
-			System.out.println(linea);
-		}
+		
 	}
 	
 }
