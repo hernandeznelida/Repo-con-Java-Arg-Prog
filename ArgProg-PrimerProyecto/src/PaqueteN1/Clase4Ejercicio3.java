@@ -1,26 +1,28 @@
 package PaqueteN1;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
 
 public class Clase4Ejercicio3 {
 
-	public static void main(String[] args) throws FileNotFoundException {
-		File archivo = new File("C:\\Users\\Fabricio\\miprimerarchivoent.txt");
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		//nombres a array_nombres
+		String nombres="hernan;leonel;julian;enzo;roman;andres;rodrigo;javier;ignacio;matias";
 
-		int sumaInt=0;
+		String array_nombres[] = nombres.split(";");
 
-		Scanner sumaNumeros = new Scanner(archivo);
+		for (String nom : array_nombres) { // for mejorado
 
-		while (sumaNumeros.hasNextInt()) {
-
-			sumaInt = sumaInt + sumaNumeros.nextInt();
-
+		    System.out.println(nom);
+		
 		}
-		sumaNumeros.close();
-
-	    System.out.println("La suma es: "+ sumaInt);
+		
+		Files.writeString(Paths.get("C:\\Users\\Fabricio\\miprimerarchivo.txt"), nombres);
+		System.out.println("Tarea realizada");
+		
   
-	}
+	}//main
 }

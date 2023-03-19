@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Calculadora {
 	
-	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
@@ -26,8 +25,8 @@ public class Calculadora {
 			double num1=entrada.nextDouble();
 			System.out.println("Ingrese el segundo numero: ");
 			double num2=entrada.nextDouble();
-			
-			
+
+
 			switch(opcion) {
 			case "1": System.out.println("La suma es: " + sumar(num1, num2));
 			break;
@@ -53,8 +52,8 @@ public class Calculadora {
 			break;
 			}
 		}
-		
-	}
+
+	}//
 	
 	static double sumar(double unNumero, double otroNumero) {
 		
@@ -76,4 +75,4 @@ public class Calculadora {
 	return unNumero / otroNumero;
 	}
 
-}
+}//
