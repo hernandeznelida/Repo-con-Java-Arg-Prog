@@ -25,7 +25,8 @@ public class Clase4Ejercicio1C {
 			
 		} else {
 			Scanner entrada= new Scanner(System.in);
-			//Por qué tengo que poner el String AoD antes que los int num1,num2,num3, para que me tome AoD por consola? En caso contrario no me lo toma. O sea si pongo String AoD en al linea 20, solo me piden los nums 
+			//Por qué tengo que poner el String AoD antes que los int num1,num2,num3,
+		//para que me tome AoD por consola? En caso contrario no me lo toma. O sea si pongo String AoD en al linea 20, solo me piden los nums 
 			System.out.println("Escribe A o D para ordenar los nums Ascend o Descend respect..");
 			String AoD= entrada.nextLine();
 			
